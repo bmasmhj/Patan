@@ -14,3 +14,21 @@ div{
 h1,h2,h3,h4,h5{
     font-family: 'Raleway', sans-serif;
 }
+
+.course{
+box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+    border: 1px solid #e7e7e7 !important;
+}
+.course:hover{
+box-shadow:0 22px 26px -4px hsl(0deg 0% 8% / 15%), 0 8px 9px -5px hsl(0deg 0% 15% / 50%) !important;
+transform: scale(1.05);
+z-index: 99999;
+cursor: pointer;
+}
+.courses p{
+    color : #67748e!important;
+    font-size: 1.11rem!important;
+}
+.course:hover{
+    color: #67748e !important;
+}
