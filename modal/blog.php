@@ -1,8 +1,10 @@
 
 <section class="pt-5 pb-0">
-    <h1 class="text-center">Latest News</h1>
+  <div class="d-flex justify-content-center">
+          <h3>Latest News</h3>
+  </div>
   <div class="container">
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-lg-4 col-md-6">
         <div class="card card-blog card-plain">
           <div class="position-relative">
