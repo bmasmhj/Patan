@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.nav-link:hover{
+    color: rgb(64, 64, 216)!important;
+}
+
+div{
+    /* border: 1px solid red!important; */
+}
+.nav_item{
+    font-size:18px!important;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Raleway', sans-serif;
+}
