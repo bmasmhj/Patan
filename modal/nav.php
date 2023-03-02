@@ -1,6 +1,7 @@
 <div class="position-fixed w-100 bg-white z-index-3" >
-    <div style='min-height:100px'>
-    <h1 class="text-center ">Patan Multiple Campus</h1>
+<div class='d-flex align-items-center justify-content-center' style='min-height:100px'>
+    <img style='max-height:70px' class='' src="https://seeklogo.com/images/T/tribhuvan-university-tu-logo-AD67A28902-seeklogo.com.png" alt="logog">    
+<h1 class="text-center">Patan Multiple Campus</h1>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-white z-index-3 py-3">
   <div class="container">
@@ -41,11 +42,7 @@
             Contact US
           </a>
         </li>
-
       </ul>
-
-
-    
     </div>
   </div>
 </nav>
