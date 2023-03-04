@@ -32,3 +32,9 @@ cursor: pointer;
 .course:hover{
     color: #67748e !important;
 }
+.blog_img{
+    min-height: 240px;
+    background-color: #6DB3F2;
+        background-position: center;
+            background-size: cover;
+}
