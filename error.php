@@ -1,6 +1,6 @@
 <?php require 'modal/header.php'; ?>
 <?php require 'modal/nav.php'; ?>
-<section class='mt-5 py-5'>
+<section class='mb-5 py-5'>
     <div class="container mt-5">
     </div>  
 </section>
