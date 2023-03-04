@@ -1,4 +1,4 @@
-ErrorDocument 404 http://localhost/Patan/404
+ErrorDocument 404 https://bimash.com.np/Projects/Patan/404
 php_value max_input_vars 10000
 RewriteEngine on
 
