@@ -1,6 +1,4 @@
-<!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
 <?php require 'modal/contact-us.php'; ?>
-
 <footer class="footer py-10">
   <div class="container">
     <div class="row">
@@ -51,7 +49,6 @@
     </div>
   </div>
 </footer>
-<!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
