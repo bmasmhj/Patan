@@ -11,5 +11,6 @@
     <title>Patan Bca Guys</title>
 </head>
 <body>
+<?php require "controller/fetcher.php"?>
     
 
