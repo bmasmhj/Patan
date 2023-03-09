@@ -3,9 +3,4 @@
 <?php require 'modal/hero-section.php'; ?>
 <?php require 'modal/blog.php'; ?>
 <?php require 'modal/course.php'; ?>
-
-
-
-
-
 <?php require 'modal/footer.php'; ?>
