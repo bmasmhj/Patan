@@ -1,5 +1,5 @@
 <header class="position-relative">
-  <div class="page-header min-vh-100" style="background-image: url(http://www.tribhuvan-university.edu.np/upload_file/images/slider/1670749582_20992219_fdfdfdfdf.png);">
+  <div class="page-header min-vh-100" style="background-image: url(assets/img/header.png);">
     <span class="mask bg-gradient-info"></span>
     <div class="container">
       <div class="row">

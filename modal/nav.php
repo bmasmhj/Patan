@@ -15,24 +15,24 @@
     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
       <ul class="navbar-nav navbar-nav-hover mx-auto">
         <li class="nav-item  mx-5">
-          <a href="index.php" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
+          <a href="<?php echo $base_url;?>Home" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
             Home
           </a>
         </li>
 
         <li class="nav-item  mx-5">
-          <a href="Courses.php" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
+          <a href="<?php echo $base_url;?>Courses" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
             Courses
           </a>
         </li>
         <li class="nav-item  mx-5">
-          <a href="blog.php" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
+          <a href="<?php echo $base_url;?>Blog" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
             Blog
           </a>
         </li>
 
         <li class="nav-item  mx-5">
-          <a href="About.php" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
+          <a href="<?php echo $base_url;?>About" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" >
             About
           </a>
         </li>

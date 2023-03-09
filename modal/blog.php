@@ -13,20 +13,19 @@
             </div>
           </div>
           <div class="card-body px-1 pt-3">
-            <p class="text-gradient text-dark mb-2 text-sm">Entire Apartment • 3 Guests • 2 Beds</p>
-            <a href="javascript:;">
+            <a href="'.$base_url.'Preview/'.$blogdataval["code"].'">
               <h5>
-                '.$blogdataval["title"].'
+              '.string_sub($blogdataval["title"], 37).'
               </h5>
             </a>
-            <p>
-            '.$blogdataval["description"].'
-            </p>
-            <button type="button" class="btn btn-outline-primary btn-sm">From / Night</button>
+            <p class="text-gradient text-dark mb-2 text-sm">'.$blogdataval["created_at"].'</p>
+            <div class="blog-desc">  '.string_sub($blogdataval["description"], 120).' </div>
+            <a href="'.$base_url.'Preview/'.$blogdataval["code"].'" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
           </div>
         </div>
       </div>
       ';
       ?>
       </div>
+     
 </section>

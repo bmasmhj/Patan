@@ -1,8 +1,4 @@
 <section class='mb-5 py-5'>
-    <div class="container mt-5">
-    </div>  
-</section>
-<section class='mt-5 py-5'>
 </section>
 <div class="container">
   
@@ -14,23 +10,21 @@
     <div class="row mt-5">
       <?php
       foreach ($allblogdata as $key => $allblogdataval)
-      echo '<div class="col-lg-4 col-md-6">
+     echo '<div class="col-lg-4 col-md-6">
         <div class="card card-blog card-plain">
           <div class="position-relative">
             <div style="background-image: url('.$allblogdataval["image"].');" class="blog_img d-block blur-shadow-image">
             </div>
           </div>
           <div class="card-body px-1 pt-3">
-            <p class="text-gradient text-dark mb-2 text-sm">Entire Apartment • 3 Guests • 2 Beds</p>
-            <a href="javascript:;">
+            <a href="'.$base_url.'Preview/'.$allblogdataval["code"].'">
               <h5>
-                '.$allblogdataval["title"].'
+              '.string_sub($allblogdataval["title"], 37).'
               </h5>
             </a>
-            <p>
-'.$allblogdataval["description"].'
-            </p>
-            <button type="button" class="btn btn-outline-primary btn-sm">From / Night</button>
+            <p class="text-gradient text-dark mb-2 text-sm">'.$allblogdataval["created_at"].'</p>
+            <div class="blog-desc">  '.string_sub($allblogdataval["description"], 120).' </div>
+            <a href="'.$base_url.'Preview/'.$allblogdataval["code"].'" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
           </div>
         </div>
       </div>
