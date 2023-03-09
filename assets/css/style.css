@@ -38,3 +38,24 @@ cursor: pointer;
         background-position: center;
             background-size: cover;
 }
+
+.text-heading{
+    color: black;
+    font-weight: bold;
+}
+.blog-img{
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+.course-desc{
+    height: 84px;
+    overflow: hidden;
+}
+.blog-desc {
+     height: 60px;
+     overflow: hidden;
+ }
+ .newsmag-content>p{
+    text-align: justify!important;
+ }
