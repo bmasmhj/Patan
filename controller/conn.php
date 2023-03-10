@@ -5,5 +5,5 @@ $components_placement = 3;
 
 $base_url = 'http://localhost/patan/';
 
-$con = mysqli_connect('server','username','pw$#','db'); 
+
 ?>
