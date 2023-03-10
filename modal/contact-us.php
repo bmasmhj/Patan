@@ -44,6 +44,7 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"> </script>
 <script>
+
   $('#btn_contactus').click(function(){
     var name = $('#contact_name').val();
     var email = $('#contact_email').val();
