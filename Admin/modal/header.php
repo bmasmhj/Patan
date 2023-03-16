@@ -12,5 +12,5 @@
     <title>Admin Patan Bca Guys</title>
 </head>
 
-<body>
+<body class="g-sidenav-show bg-gray-100">
     <?php require "controller/fetcher.php" ?>
