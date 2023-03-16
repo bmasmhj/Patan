@@ -1,4 +1,4 @@
-d<?php require 'modal/header.php'; ?>
+<?php require 'modal/header.php'; ?>
 <?php require 'modal/nav.php'; ?>
 
 
