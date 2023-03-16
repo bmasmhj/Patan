@@ -4,7 +4,7 @@
         <p>Subscribe to our News Letter to notified abot latest News</p>
         <div class="input-group mb-4">
             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-            <input id='newsletter_email' class="form-control" placeholder="Your Email..." type="text">
+            <input id='newsletter_email' class="form-control" placeholder="Your Email..." type="email">
         </div>
          <div id='subs_resp'>
           </div>
@@ -25,9 +25,9 @@
 
     if(email!=''){
       $.ajax({
-        url : "https://api.bimash.com.np/patan/api/v1/post?news_letter",
-        method : "GET",
-        data :  { token, email  },
+        url : "https://api.bimash.com.np/patan/api/v1/post",
+        method : "POST",
+        data :  { news_letter:'', token, email  },
         success : function(response){
           var rs_cnt = JSON.parse(response);
             $('#subs_resp').html(`<p class='bg-success text-white'>${rs_cnt.data.message}</p>`);

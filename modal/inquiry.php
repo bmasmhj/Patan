@@ -67,7 +67,7 @@
                     </div>
                  <label>Contact Number</label>
                     <div class="input-group mb-4">
-                      <input id="inquiry_contact" type="text" class="form-control" placeholder="eg.98XXXXXXXX">
+                      <input id="inquiry_contact" type="number" class="form-control" placeholder="eg.98XXXXXXXX">
                     </div>
                     <input id="inquiry_course" type="hidden" value='<?php echo $name ?>'  class="form-control" >
                     <div class="form-group mt-4">
@@ -100,9 +100,9 @@
     $('#inquiry_resp').html(`<p class='bg-info text-white'>Sending Message</p>`);
 
     $.ajax({
-      url : "https://api.bimash.com.np/patan/api/v1/post?inquiry",
-      method : "GET",
-      data :  { token  , contact_no , message , code , email },
+      url : "https://api.bimash.com.np/patan/api/v1/post",
+      method : "POST",
+      data :  { inquiry: '', token  , contact_no , message , code , email },
       success : function(response){
           var rs_inq = JSON.parse(response);
         $('#inquiry_resp').html(`<p class='bg-success text-white'>${rs_inq.data.message}</p>`);
