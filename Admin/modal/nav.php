@@ -1,84 +1,59 @@
-<style>
-  li {
-    list-style: none!important;
-  }
-</style>
-<nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
-  <div class="scroll-wrapper scrollbar-inner" style="position: relative;">
-    <div class="scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 647px;">
+<div class="min-height-300 bg-primary position-absolute w-100"></div>
 
-      <div class="sidenav-header  d-flex  align-items-center">
-        <a class="navbar-brand" href="javascript:void(0)">
-          <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
-        </a>
-        <div class=" ml-auto ">
-
-          <div class="sidenav-toggler d-none d-xl-block active" data-action="sidenav-unpin" data-target="#sidenav-main">
-            <div class="sidenav-toggler-inner">
-              <i class="sidenav-toggler-line"></i>
-              <i class="sidenav-toggler-line"></i>
-              <i class="sidenav-toggler-line"></i>
-            </div>
+<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 my-3  ms-4 ps" id="sidenav-main">
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0" href="" target="_blank">
+      <span class="ms-1 font-weight-bold">PATAN</span>
+    </a>
+  </div>
+  <hr class="horizontal dark mt-0">
+  <div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="<?php echo $base_url; ?>Admin/Course">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
-        </div>
-      </div>
-      <div class="navbar-inner">
-
-        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-dashboards">
-                <i class="ni ni-shop text-primary"></i>
-                <span class="nav-link-text">Dashboards</span>
-              </a>
-              <div class="collapse show" id="navbar-dashboards">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/dashboards/dashboard.html" class="nav-link">
-                      <span class="sidenav-normal">Faculities</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/dashboards/alternative.html" class="nav-link">
-                      <span class="sidenav-normal">Notice</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/dashboards/dashboard.html" class="nav-link">
-                      <span class="sidenav-normal">PhotoGallery</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/dashboards/alternative.html" class="nav-link">
-                      <span class="sidenav-normal">Notice</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-        </li>
-
-
-      </div>
-    </div>
+          <span class="nav-link-text ms-1">Courses</span>
+        </a>
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Photogallery">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Photogallary</span>
+        </a>
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Publication">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Publication</span>
+        </a>
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Blog">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Blog</span>
+        </a>
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Notice">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Notice</span>
+        </a>
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Faculities">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Faculties</span>
+        </a>
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Admstaff">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">AdministrationStaff</span>
+        </a>
+      </li>
+    </ul>
   </div>
-  <div class="scroll-element scroll-x scroll-scrolly_visible">
-    <div class="scroll-element_outer">
-      <div class="scroll-element_size"></div>
-      <div class="scroll-element_track"></div>
-      <div class="scroll-bar" style="width: 0px; left: 0px;"></div>
-    </div>
-  </div>
-  <div class="scroll-element scroll-y scroll-scrolly_visible">
-    <div class="scroll-element_outer">
-      <div class="scroll-element_size"></div>
-      <div class="scroll-element_track"></div>
-      <div class="scroll-bar" style="height: 489px; top: 0px;"></div>
-    </div>
-  </div>
-  </div>
-</nav>
+</aside>
