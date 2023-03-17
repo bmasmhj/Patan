@@ -11,31 +11,31 @@
   <div>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="<?php echo $base_url; ?>Admin_Course">
+        <a class="nav-link active" href="<?php echo $base_url; ?>Admin/Course">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Courses</span>
         </a>
-        <a class="nav-link " href="<?php echo $base_url; ?>Admin_Photogallery">
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Photogallery">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Photogallary</span>
         </a>
-        <a class="nav-link " href="<?php echo $base_url; ?>Admin_Publication">
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Publication">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Publication</span>
         </a>
-        <a class="nav-link " href="<?php echo $base_url; ?>Admin_Blog">
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Blog">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Blog</span>
         </a>
-        <a class="nav-link " href="<?php echo $base_url; ?>Admin_Notice">
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Notice">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
@@ -47,7 +47,7 @@
           </div>
           <span class="nav-link-text ms-1">Faculties</span>
         </a>
-        <a class="nav-link " href="<?php echo $base_url; ?>Admin_Admstaff">
+        <a class="nav-link " href="<?php echo $base_url; ?>Admin/Admstaff">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
