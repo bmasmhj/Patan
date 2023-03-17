@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<?php require 'controller/connnect.php';
-=======
-<?php require 'conn.php';
->>>>>>> 722330c0c64c8c0e9681705578d9c5409d15fb5d
 
+<?php require 'controller/connnect.php';
 
 // $query = $db->query("SELECT * FROM picture WHERE uniqid = '$id' ORDER BY id DESC");
 // $data = [];
