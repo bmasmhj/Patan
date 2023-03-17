@@ -1,4 +1,4 @@
-<?php require 'controller/conn.php';
+<?php require 'controller/connnect.php';
 
 
 // $query = $db->query("SELECT * FROM picture WHERE uniqid = '$id' ORDER BY id DESC");
