@@ -1,1 +1,1 @@
-<?php require '../../controller/conn.php';
+<?php require '../../controller/connnect.php';

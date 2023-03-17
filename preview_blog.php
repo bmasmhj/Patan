@@ -2,7 +2,7 @@
 <?php require 'modal/nav.php'; ?>
 <section class='mb-5 py-5'>
   <div class="container mt-5">
-    this is test for commit
+
   </div>
 </section>
 <div class="container">

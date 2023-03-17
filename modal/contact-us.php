@@ -20,7 +20,7 @@
               </div>
               <label>Contact Number</label>
               <div class="input-group mb-3">
-                <input id="contact_contact" type="text" class="form-control" placeholder="Contact Number" aria-label="Name" aria-describedby="name-addon" >
+                <input id="contact_contact" type="number" class="form-control" placeholder="Contact Number" aria-label="Name" aria-describedby="name-addon" >
               </div>
               <label>address</label>
               <div class="input-group mb-3">
@@ -54,9 +54,9 @@
     if(name!='' && email!='' && contact !='' && address !='' && message !=''){
       $('#contact_resp').html(`<p class='bg-info text-white'>Sending Message</p>`);
       $.ajax({
-        url : "https://api.bimash.com.np/patan/api/v1/post?contact_us",
-        method : "GET",
-        data :  { token : 'cGF0YW5fYmNhZ3V5cw==' ,name,email,contact,address,message  },
+        url : "https://api.bimash.com.np/patan/api/v1/post",
+        method : "POST",
+        data :  { contact_us : '', token : 'cGF0YW5fYmNhZ3V5cw==' ,name,email,contact,address,message  },
         success : function(response){
           var rs_cnt = JSON.parse(response);
           $('#contact_resp').html(`<p class='bg-success text-white'>${rs_cnt.data.message}</p>`);

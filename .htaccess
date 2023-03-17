@@ -16,6 +16,36 @@ RewriteRule ^Preview preview_blog.php [NC,L]
 RewriteRule ^404 error.php [NC,L]
 RewriteRule ^MobileDesc mobiledesc.php [NC,L]
 
+RewriteRule ^AdministrativeStaff administrativestaff.php [NC,L]
+RewriteRule ^Faculties faculties.php [NC,L]
+RewriteRule ^Notice notice.php [NC,L]
+RewriteRule ^PhotoGallery photogallery.php [NC,L]
+RewriteRule ^Program program.php [NC,L]
+RewriteRule ^Publication publication.php [NC,L]
+
+RewriteRule ^Admin admin/templatecard.php [NC,L]
+RewriteRule ^Admin_Photogallery admin/photogallary.php [NC,L]
+RewriteRule ^Admin_Blog admin/admin_blog.php [NC,L]
+RewriteRule ^Admin_Faculities admin/admin_faculities.php [NC,L]
+RewriteRule ^Admin_Notice admin/notice.php [NC,L]
+RewriteRule ^Admin_Admstaff admin/admstaff.php [NC,L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

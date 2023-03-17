@@ -4,7 +4,7 @@
     <h1 class="text-center">Patan Multiple Campus</h1>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-white z-index-3 py-3">
-    <div class="container">
+    <div class="w-100 d-flex align-items-center justify-content-center">
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
           <span class="navbar-toggler-bar bar1"></span>
@@ -20,7 +20,7 @@
             </a>
           </li>
 
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <li class="nav-item dropdown dropdown-hover mx-5">
             <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
               Blocks
             </a>
@@ -51,7 +51,7 @@
 
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <li class="nav-item dropdown dropdown-hover mx-5">
             <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
               Blocks
             </a>
@@ -82,7 +82,7 @@
 
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <li class="nav-item dropdown dropdown-hover mx-5">
             <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
               Blocks
             </a>
@@ -126,6 +126,11 @@
           <li class="nav-item  mx-5">
             <a href="<?php echo $base_url; ?>Blog" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center">
               Blog
+            </a>
+          </li>
+           <li class="nav-item  mx-5">
+            <a href="<?php echo $base_url; ?>Notice" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center">
+              Notice
             </a>
           </li>
 
