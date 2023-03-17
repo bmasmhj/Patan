@@ -1,4 +1,3 @@
 conn.php
-controller/conn.php
 api
-*.php
+controller
