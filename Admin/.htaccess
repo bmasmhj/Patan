@@ -1,0 +1,39 @@
+ErrorDocument 404 https://bimash.com.np/Projects/Patan/404
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteRule ^Photogallery photogallary.php [NC,L]
+RewriteRule ^Publication publication.php [NC,L]
+RewriteRule ^Blog blog.php [NC,L]
+RewriteRule ^Faculities faculities.php [NC,L]
+RewriteRule ^Notice notice.php [NC,L]
+RewriteRule ^Admstaff admstaff.php [NC,L]
+RewriteRule ^Course courses.php [NC,L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
