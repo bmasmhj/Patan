@@ -20,6 +20,11 @@ RewriteRule ^Faculties faculties.php [NC,L]
 RewriteRule ^Notice notice.php [NC,L]
 RewriteRule ^PhotoGallery photogallery.php [NC,L]
 RewriteRule ^Program program.php [NC,L]
+RewriteRule ^Professor professor.php [NC,L]
+RewriteRule ^Staff staff.php [NC,L]
+RewriteRule ^CampusCheif campuscheif.php [NC,L]
+
+
 RewriteRule ^Publication publication.php [NC,L]
 
 
