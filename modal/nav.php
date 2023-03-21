@@ -22,96 +22,80 @@
 
           <li class="nav-item dropdown dropdown-hover mx-5">
             <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-              Blocks
+              Faculties
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation dropdown-lg dropdown-lg-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
+              <div class="d-none d-lg-block">
+                <?php echo get_faculties(); ?>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item  mx-5">
+            <a href="<?php echo $base_url; ?>PhotoGallery" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center">
+              Photo Gallery
+            </a>
+          </li>
+          
+                  
+    
+          <li class="nav-item dropdown dropdown-hover mx-5">
+            <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+              Organization Structure
             </a>
             <div class="dropdown-menu dropdown-menu-animation dropdown-lg dropdown-lg-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
               <div class="d-none d-lg-block">
                 <ul class="list-group">
                   <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../../presentation.html">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="<?php echo $base_url; ?>Staff">
                       <div class="d-flex">
                         <div class="icon h-10 me-3 d-flex mt-1">
                           <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
                         </div>
                         <div class="w-100 d-flex align-items-center justify-content-between">
                           <div>
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Page Sections</h6>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0" >Administration of Staff</h6>
                           </div>
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a class="dropdown-item ps-3 border-radius-md mb-1" href="../../sections/page-sections/hero-sections.html">
-                        Page Headers
-                      </a>
-                    </div>
+                  </li>
+                  <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="<?php echo $base_url; ?>Professor">
+                      <div class="d-flex">
+                        <div class="icon h-10 me-3 d-flex mt-1">
+                          <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
+                        </div>
+                        <div class="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0" >List of Professor</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="<?php echo $base_url; ?>CampusCheif">
+                      <div class="d-flex">
+                        <div class="icon h-10 me-3 d-flex mt-1">
+                          <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
+                        </div>
+                        <div class="w-100 d-flex align-items-center justify-content-between">
+                          <div>
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Foundation of PMC</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                   </li>
                 </ul>
               </div>
 
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-5">
-            <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-              Blocks
+          <li class="nav-item mx-5">
+            <a href="<?php echo $base_url; ?>Publication" class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center">
+              Publication
             </a>
-            <div class="dropdown-menu dropdown-menu-animation dropdown-lg dropdown-lg-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
-              <div class="d-none d-lg-block">
-                <ul class="list-group">
-                  <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../../presentation.html">
-                      <div class="d-flex">
-                        <div class="icon h-10 me-3 d-flex mt-1">
-                          <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
-                        </div>
-                        <div class="w-100 d-flex align-items-center justify-content-between">
-                          <div>
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Page Sections</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a class="dropdown-item ps-3 border-radius-md mb-1" href="../../sections/page-sections/hero-sections.html">
-                        Page Headers
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-5">
-            <a class="nav-link nav_item p-0 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-              Blocks
-            </a>
-            <div class="dropdown-menu dropdown-menu-animation dropdown-lg dropdown-lg-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
-              <div class="d-none d-lg-block">
-                <ul class="list-group">
-                  <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../../presentation.html">
-                      <div class="d-flex">
-                        <div class="icon h-10 me-3 d-flex mt-1">
-                          <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
-                        </div>
-                        <div class="w-100 d-flex align-items-center justify-content-between">
-                          <div>
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Page Sections</h6>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <a class="dropdown-item ps-3 border-radius-md mb-1" href="../../sections/page-sections/hero-sections.html">
-                        Page Headers
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
           </li>
 
 
