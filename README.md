@@ -7,5 +7,4 @@ api : https://api.bimash.com.np/
 
 Done with patan bca students
 
-
-##Edited By Sijan Bhandari
+# My friends are dumb so I had to do 80% or work by myself
