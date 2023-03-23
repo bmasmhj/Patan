@@ -5,12 +5,13 @@
     <div class="row">
       <div class="col-md-8 ms-auto me-auto text-center">
         <h3>Our Courses</h3>
+        
       </div>
     </div>
     <div class="row mt-5">
 
     <?php 
-    foreach ($allcoursedata as $key => $allcoursedataval)
+    foreach ($allcoursedata as $key => $allcoursedataval){
      echo ' <div onclick="window.location.href=\''.$base_url.'Detail/'.$allcoursedataval["code"].'\'" class="col-lg-4 col-md-6 mb-5 courses icon-move-right"  data-aos="fade-up" data-aos-delay="300">
         <div class="card course">
           <div class="card-body border-radius-lg position-relative overflow-hidden pb-4 px-5">
@@ -25,6 +26,7 @@
           </div>
         </div>
       </div>';
+  }
       ?>
      
     </div>

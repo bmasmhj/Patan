@@ -18,7 +18,7 @@ if ($coursequery->num_rows > 0) {
         array_push($coursedata, $courserow);
     }
 }
-$galleryquery = $con->query("SELECT * FROM gallery ORDER BY  id desc LIMIT 3 ");
+$galleryquery = $con->query("SELECT * FROM gallery ORDER BY  id desc ");
 $gallerydata = [];
 if ($galleryquery->num_rows > 0) {
     while ($galleryrow = $galleryquery->fetch_assoc()) {
@@ -63,7 +63,7 @@ if ($campuscheifquery->num_rows > 0) {
 }
 
 
-$allcoursequery = $con->query("SELECT * FROM department ORDER BY  id desc  ");
+$allcoursequery = $con->query("SELECT * FROM department ORDER BY id desc  ");
 $allcoursedata = [];
 if ($allcoursequery->num_rows > 0) {
     while ($allcourserow = $allcoursequery->fetch_assoc()) {
@@ -111,6 +111,8 @@ JOIN faculty ON department.course_id = faculty.id WHERE department.code = '$name
             $html .= '<h1>' . $courserow['department_name'] . '</h1>';
             $html .= '<h6>Faculty : <span class="text-secondary">' . $courserow["faculty_name"] . '</span> </h6>';
             $html .= '<div class="course_detail">' . $courserow['description'] . '</div>';
+            $html .= '<div class="course_detail">' . $courserow['fulldesc'] . '</div>';
+
             return $html;
         }
     } else {
@@ -132,6 +134,7 @@ function get_blog_detail($name)
             <img class="w-100 blog-img" src="' . $blogrow["image"] . '" alt="jpg">
             <h6 class="mt-4">' . $blogrow["title"] . '</h6>
             <div class="mt-3 text-justify">' . $blogrow["description"] . '</div>
+            <div class="mt-3 text-justify">' . $blogrow["fulldesc"] . '</div>
             ';
             return $html;
         }
