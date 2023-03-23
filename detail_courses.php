@@ -1,10 +1,15 @@
 <?php require 'modal/header.php'; ?>
 <?php require 'modal/nav.php'; ?>
 <section class='py-5'>
+    <style>
+    .course img{
+        width: 100%!important;
+    }
+  </style>
 </section>
 <section class="mt-5 py-5">
     <div class="container mt-5">
-        <div class="row">
+        <div class="row course">
             <?php
                 $directoryURI = $_SERVER['REQUEST_URI'];
                 $path = parse_url($directoryURI, PHP_URL_PATH);

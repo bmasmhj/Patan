@@ -4,10 +4,15 @@
   <div class="container mt-5">
 
   </div>
+  <style>
+    .blog img{
+        width: 100%!important;
+    }
+  </style>
 </section>
 <div class="container">
     <div class="row">
-        <div class="col-9">
+        <div class="col-md-9 blog">
               <?php
                 $directoryURI = $_SERVER['REQUEST_URI'];
                 $path = parse_url($directoryURI, PHP_URL_PATH);
@@ -22,7 +27,7 @@
            
             <?php ?>
         </div>
-        <div class="col-3">
+        <div class="col-md-3">
             <div class="card p-2 mx-3">
                 <h4>Top News</h4>
                 <div class="card-body">

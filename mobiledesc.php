@@ -9,18 +9,28 @@
     <title>Patan Bca Guys</title>
 </head>
 <body>
+    <style>
+        img{
+            width: 100%;
+        }
+    </style>
 <div class="container mt-3">
 <?php 
 if(isset($_GET['c'])){
 $name = $_GET['c'];
- require 'controller/conn.php';
-    $coursequery = $con->query("SELECT * FROM course WHERE code = '$name' ");
+ require 'controller/connnect.php';
+     $coursequery = $con->query("SELECT department.* , faculty.name AS faculty_name
+FROM department
+JOIN faculty ON department.course_id = faculty.id WHERE department.code = '$name';
+    
+    ");
     $html = '';
     if($coursequery->num_rows > 0){
         while($courserow = $coursequery->fetch_assoc()){
-            $html .= '<h1>'.$courserow['name'].'</h1>';
-            $html .= '<h6>Faculty : <span class="text-secondary">'.$courserow["faculty"].'</span> </h6>';
+            $html .= '<h1>'.$courserow['department_name'].'</h1>';
+            $html .= '<h6>Faculty : <span class="text-secondary">'.$courserow["faculty_name"].'</span> </h6>';
             $html .= '<div class="course_detail">'.$courserow['description'].'</div>';
+            $html .= '<div class="course_detail">'.$courserow['fulldesc'].'</div>';
             echo $html;
         }
     }else{
@@ -28,7 +38,7 @@ $name = $_GET['c'];
     }
 }
 else if(isset($_GET['b'])){
- require 'controller/conn.php';
+ require 'controller/connnect.php';
 $name = $_GET['b'];
 
     $blogquery = $con->query("SELECT * FROM blog WHERE code = '$name' ");
@@ -41,7 +51,8 @@ $name = $_GET['b'];
             
             <img class="w-100 blog-img" src="'.$blogrow["image"].'" alt="jpg">
             <h6 class="mt-4">'.$blogrow["title"].'</h6>
-            <div class="mt-3 text-justify">'.$blogrow["description"].'</div>
+            <div class="mt-3 text-justify">'.$blogrow["description"].'</div> 
+            <div class="mt-3 text-justify">'.$blogrow["fulldesc"].'</div> 
             ';
             echo $html;
         }
