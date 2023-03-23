@@ -1,30 +1,53 @@
 <?php require "modal/header.php" ?>
+<div class="row">
+    <div class="col-md-2">
 <?php require "modal/nav.php" ?>
+</div>
+<div class="col-md-10 mt-5">
 <div class="container">
     <div class="card p-3">
         <h4>Notice</h4>
-
-        <form>
-            <div class="mb-3">
-                <label for="coursetitle" class="form-label">Courses title</label>
-                <input type="text" class="form-control" id="coursetitle">
+        <form action="controller/add.php" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-5">
+                    <input type="text" class="form-control" required name="title">
+                </div>
+                <div class="col-5">
+                    <input type="file" class="form-control" required name="file_input">
+                </div>
+                <div class="col-2">
+                    <input type="submit" class="form-control bg-success text-white" required name="add_notice">
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Description</label>
-                <textarea class="form-control" name="desc" id="desc" rows="3"></textarea>
-            </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Choose Image</label>
-                <input type="file" class="form-control" name="img" id="img" placeholder="" aria-describedby="fileHelpId">
-                <div id="fileHelpId" class="form-text">Help text</div>
-            </div>
-
-
-            <button type="submit" class="btn btn-primary">Add</button>
         </form>
     </div>
-
+    <div class="card mt-3">
+            <div class="card-body">
+                <div class='table-responsive p-0'>
+                    <table class="table align-items-center mb-0">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >S.No</th>
+                                <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >Title</th>
+                                <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                foreach ($noticedata as $key => $noticedataval)
+                                {
+                                    $sn=$key+1;
+                                    echo ' <tr>
+                                    <td class="p-2">'.$sn.'</td>
+                                    <td class="p-2">'.$noticedataval["title"].'</td>
+                                    <td class="p-2"><a href="'.$noticedataval["file"].'" download class="mx-3" ><i class="fa-solid text-info fa-download"></i></a> <a href="controller/del.php?delete_notice='.$noticedataval["id"].'"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                                </tr>';
+                                }
+                                ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 </div>
 <?php require "modal/footer.php" ?>

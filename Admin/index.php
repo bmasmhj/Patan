@@ -1,3 +1,6 @@
-<?php require "modal/header.php" ?>
-<?php require "modal/nav.php" ?>
-<?php require "modal/footer.php" ?>
+<?php
+
+header('Location: Dashboard');
+
+
+?>

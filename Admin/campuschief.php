@@ -6,20 +6,19 @@
 <div class="col-md-10 mt-5">
 <div class="container">
     <div class="card mb-3 p-3">
-        <h4>Professor</h4>
+        <h4>Campus Chief</h4>
         <form action="controller/add.php" method="post">
            <div class="row">
-                <div class="col-5"> 
+                <div class="col-10"> 
                     <input type="text" placeholder="name" class="form-control" required name="name">
                 </div>
-                 <div class="col-5"> 
-                    <input type="text" placeholder="subject" class="form-control" required name="subject">
-                </div>
                 <div class="col-2">   
-                    <input type="submit" class="form-control bg-success text-white" required value='Add' name="add_prof">
+                    <input type="submit" class="form-control bg-success text-white" required name="add_campuscheif" value='Add'>
                 </div>
            </div>
         </form>
+
+     
     </div>
     <div class="card">
         <div class="card-body">
@@ -29,21 +28,19 @@
                         <tr>
                             <th>S.No</th>
                             <th>Name</th>
-                            <th>Subject</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                       <?php
-                        foreach ($profesdata as $key => $profesdataval)
+                        <?php
+                        foreach ($campuscheifdata as $key => $campuscheifdataval)
                         {
                             $sn=$key+1;
                             echo ' <tr>
-                                <td>'.$sn.'</td>
-                                <td>'.$profesdataval["name"].'</td>
-                                <td>'.$profesdataval["subject"].'</td>
-                                <td><a href="controller/del.php?delete_prof='.$profesdataval["id"].'"><i class="fa-solid fa-trash text-danger"></i></a></td>
-                            </tr>';
+                            <td>'.$sn.'</td>
+                            <td>'.$campuscheifdataval["names"].'</td>
+                             <td><a href="controller/del.php?delete_campuscheif='.$campuscheifdataval["id"].'"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                        </tr>';
                         }
                         ?>
                     </tbody>
