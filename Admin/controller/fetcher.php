@@ -1,26 +1,65 @@
 <?php require '../controller/connnect.php';
 
-
-
-// $query = $db->query("SELECT * FROM picture WHERE uniqid = '$id' ORDER BY id DESC");
-// $data = [];
-//     if($query->num_rows > 0){
-//         while($row = $query->fetch_assoc()){
-//             array_push($data , $row)
-//         }
-//     }else{
-//         echo 'no data';
-//     }
-
-$coursequery = $con->query("SELECT * FROM course ORDER BY  id desc LIMIT 3 ");
+$coursequery = $con->query("SELECT * FROM department ORDER BY  id desc LIMIT 3 ");
 $coursedata = [];
 if ($coursequery->num_rows > 0) {
     while ($courserow = $coursequery->fetch_assoc()) {
         array_push($coursedata, $courserow);
     }
 }
+$facultyquery = $con->query("SELECT * FROM faculty ORDER BY  id desc");
+$facultydata = [];
+if ($facultyquery->num_rows > 0) {
+    while ($facultyrow = $facultyquery->fetch_assoc()) {
+        array_push($facultydata, $facultyrow);
+    }
+}
+$galleryquery = $con->query("SELECT * FROM gallery ORDER BY  id desc ");
+$gallerydata = [];
+if ($galleryquery->num_rows > 0) {
+    while ($galleryrow = $galleryquery->fetch_assoc()) {
+        array_push($gallerydata, $galleryrow);
+    }
+}
+$staffquery = $con->query("SELECT * FROM staff  ");
+$staffdata = [];
+if ($staffquery->num_rows > 0) {
+    while ($staffrow = $staffquery->fetch_assoc()) {
+        array_push($staffdata, $staffrow);
+    }
+}
+$noticequery = $con->query("SELECT * FROM notice ORDER BY id desc ");
+$noticedata = [];
+if ($noticequery->num_rows > 0) {
+    while ($noticerow = $noticequery->fetch_assoc()) {
+        array_push($noticedata, $noticerow);
+    }
+}
+$publicationquery = $con->query("SELECT * FROM publication  ");
+$publicationdata = [];
+if ($publicationquery->num_rows > 0) {
+    while ($publicationrow = $publicationquery->fetch_assoc()) {
+        array_push($publicationdata, $publicationrow);
+    }
+}
+$profesquery = $con->query("SELECT * FROM professor  ");
+$profesdata = [];
+if ($profesquery->num_rows > 0) {
+    while ($profesrow = $profesquery->fetch_assoc()) {
+        array_push($profesdata, $profesrow);
+    }
+}
 
-$allcoursequery = $con->query("SELECT * FROM course ORDER BY  id desc  ");
+$campuscheifquery = $con->query("SELECT * FROM campuscheif ORDER BY id desc ");
+$campuscheifdata = [];
+if ($campuscheifquery->num_rows > 0) {
+    while ($campuscheifrow = $campuscheifquery->fetch_assoc()) {
+        array_push($campuscheifdata, $campuscheifrow);
+    }
+}
+
+
+$allcoursequery = $con->query("SELECT * FROM department ORDER BY  id desc  ");
 $allcoursedata = [];
 if ($allcoursequery->num_rows > 0) {
     while ($allcourserow = $allcoursequery->fetch_assoc()) {
@@ -49,46 +88,6 @@ if ($allblogquery->num_rows > 0) {
         array_push($allblogdata, $allblogrow);
     }
 }
-
-
-function get_course_detail($name)
-{
-    require 'controller/conn.php';
-    $coursequery = $con->query("SELECT * FROM course WHERE code = '$name' ");
-    $html = '';
-    if ($coursequery->num_rows > 0) {
-        while ($courserow = $coursequery->fetch_assoc()) {
-            $html .= '<h1>' . $courserow['name'] . '</h1>';
-            $html .= '<h6>Faculty : <span class="text-secondary">' . $courserow["faculty"] . '</span> </h6>';
-            $html .= '<div class="course_detail">' . $courserow['description'] . '</div>';
-            return $html;
-        }
-    } else {
-        echo ' <h1>404 Course Not Found</h1>';
-    }
-}
-
-function get_blog_detail($name)
-{
-    require 'controller/conn.php';
-    $blogquery = $con->query("SELECT * FROM blog WHERE code = '$name' ");
-    $html = '';
-    if ($blogquery->num_rows > 0) {
-        while ($blogrow = $blogquery->fetch_assoc()) {
-            $html .= ' 
-            <h1 class="text-heading">' . $blogrow["title"] . '</h1>
-            <h6>Posted on : ' . $blogrow["created_at"] . '</h6>
-            <img class="w-100 blog-img" src="' . $blogrow["image"] . '" alt="jpg">
-            <h6 class="mt-4">' . $blogrow["title"] . '</h6>
-            <div class="mt-3 text-justify">' . $blogrow["description"] . '</div>
-            ';
-            return $html;
-        }
-    } else {
-        echo ' <h1>404 Blog Not Found</h1>';
-    }
-}
-
 function string_sub($str, $num)
 {
     if (strlen($str) > $num) {
@@ -97,3 +96,5 @@ function string_sub($str, $num)
         return $str;
     }
 }
+
+?>
