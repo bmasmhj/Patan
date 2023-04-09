@@ -93,6 +93,7 @@
         </a>
       </li>
     </ul>
+    <a href='logout.php' class='btn btn-danger'>Logout</a>
   </div>
 </aside>
 

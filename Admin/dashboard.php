@@ -32,89 +32,111 @@
 <div class="col-md-10 mt-5">
 <div class="container">
     <div class="card p-3">
-        <h4>No Dashboard</h4>
-       <div class="container">
-            You will see nothing here because my friends are dumb
-            <pre>
-             <div class="terminal" id="terminal">
-        </div>
-</pre>
-            <div class='d-md-none d-block'>
-                <img src="https://media.giphy.com/media/3o7TKsQ8U1iZ3Nl7Di/giphy.gif" alt="" class="img-fluid">
+        <h4>Dashboard</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mt-3">
+              <div class="card-body">
+            <h6>Publications</h6>
+
+                  <div class='table-responsive p-0'>
+                      <table class="table align-items-center mb-0">
+                          <thead>
+                              <tr>
+                                  <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >S.No</th>
+                                  <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >Title</th>
+                                  <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >ISSN</th>
+                                  <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >Action</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <?php
+                                  foreach ($publicationdata as $key => $publicationdataval)
+                                  {
+                                      $sn=$key+1;
+                                      echo ' <tr>
+                                      <td class="p-2">'.$sn.'</td>
+                                      <td class="p-2">'.$publicationdataval["title"].'</td>
+                                      <td class="p-2">'.$publicationdataval["issn"].'</td>
+                                      <td class="p-2"><a href="'.$publicationdataval["url"].'" download class="mx-3" ><i class="fa-solid text-info fa-download"></i></a> <a href="controller/del.php?delete_publication='.$publicationdataval["id"].'"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                                  </tr>';
+                                  }
+                                  ?>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
             </div>
-        </div> 
+        </div>
+        <div class="col-md-6">
+          <div class="card mt-3">
+            <div class="card-body">
+            <h6>Notices</h6>
+                <div class='table-responsive p-0'>
+                    <table class="table align-items-center mb-0">
+                        <thead>
+                            <tr>
+                                <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >S.No</th>
+                                <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >Title</th>
+                                <th class="p-2 text-uppercase text-secondary text-xxs font-weight-bolder opacity-7" >Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                foreach ($noticedata as $key => $noticedataval)
+                                {
+                                    $sn=$key+1;
+                                    echo ' <tr>
+                                    <td class="p-2">'.$sn.'</td>
+                                    <td class="p-2">'.$noticedataval["title"].'</td>
+                                    <td class="p-2"><a href="'.$noticedataval["file"].'" download class="mx-3" ><i class="fa-solid text-info fa-download"></i></a> <a href="controller/del.php?delete_notice='.$noticedataval["id"].'"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                                </tr>';
+                                }
+                                ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+               <div class="card">
+          <div class="card-body">
+            <h6>Professor</h6>
+              <div class='table-responsive p-0'>
+                  <table class="table align-items-center mb-0">
+                      <thead>
+                          <tr>
+                              <th>S.No</th>
+                              <th>Name</th>
+                              <th>Subject</th>
+                              <th>Action</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                          foreach ($profesdata as $key => $profesdataval)
+                          {
+                              $sn=$key+1;
+                              echo ' <tr>
+                                  <td>'.$sn.'</td>
+                                  <td>'.$profesdataval["name"].'</td>
+                                  <td>'.$profesdataval["subject"].'</td>
+                                  <td><a href="controller/del.php?delete_prof='.$profesdataval["id"].'"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                              </tr>';
+                          }
+                          ?>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+        </div>
+        </div>
     </div>
 </div>
 
 <?php require "modal/footer.php" ?>
 
-<script>
-    var code = `
-echo "danbulant.eu presents...";
-$someVar[0] = "Hacker Typer..";`;
-var OLDcode = `
-#include <iostream>
-#include <string>
-#include <WebsiteLoader.h>
-
-using namespace std;
-
-int main() {
-    WebsiteLoader loader;
-    loader.connectToServer("https"//bimash.com.np/");
-
-    cout << "Accessing server..." << endl;
-    loader.sendCommand("access_server");
-
-    cout << "Executing command..." << endl;
-    loader.sendCommand("execute_command");
-
-    cout << "Bypassing security..." << endl;
-    loader.bypassSecurity();
-
-    cout << "Decrypting files..." << endl;
-    loader.decryptFiles();
-
-    cout << "Analyzing data..." << endl;
-    loader.analyzeData();
-
-    cout << "Hacking firewall..." << endl;
-    loader.hackFirewall();
-
-    cout << "Cracking code..." << endl;
-    loader.crackCode();
-
-    cout << "Searching for vulnerabilities..." << endl;
-    loader.searchForVulnerabilities();
-
-    cout << "Initiating protocol..." << endl;
-    loader.initiateProtocol();
-
-    cout << "Access granted. Loading website..." << endl;
-    loader.loadWebsite();
-
-    return 0;
-}
-
-
-`;
-var i = 0;
-document.addEventListener("keydown", function () {
- 
-});
-
-const dash = setInterval(() => {
-     terminal.innerText += OLDcode.slice(i, i + 5);
-  i += 5;
-  if (i > OLDcode.length) {
-    i = 0;
-    clearInterval(dash);
-  }
-}, 100);
-
-setInterval(function () {
-  var term = document.getElementById("terminal");
-  term.scrollTop = term.scrollHeight;
-}, 100);
-
-</script>

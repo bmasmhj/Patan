@@ -22,7 +22,7 @@ if(isset($_POST['un_id'])){
                 // Upload file to server 
                 if(move_uploaded_file($_FILES["files"]["tmp_name"][$key], $targetFilePath)){ 
                     // Image db insert sql 
-                    $insertValuesSQL = $randmo.$fileName; 
+                    $insertValuesSQL = 'https://bimash.com.np/Projects/Patan/Admin/controller/uploads/'.$randmo.$fileName; 
                     if(!empty($insertValuesSQL)){ 
                          // Insert image file name into database 
                         $insert = $con->query("INSERT INTO gallery (`url` , `name` ) VALUES ( '$insertValuesSQL' , '$title') "); 

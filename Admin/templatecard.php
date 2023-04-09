@@ -1,7 +1,11 @@
 <?php require "modal/header.php" ?>
+<div class="row">
+    <div class="col-2">
 <?php require "modal/nav.php" ?>
+</div>
+<div class="col-10 mt-5">
 <div class="container">
-        <div class="card p-3">
+    <div class="card p-3">
                 <h4>Courses</h4>
 
                 <form>

@@ -7,7 +7,14 @@
   <style>
     .blog img{
         width: 100%!important;
+        object-fit : center;
+        object-position : top;
     }
+    .blog-img {
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
   </style>
 </section>
 <div class="container">
